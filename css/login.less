@@ -1,0 +1,311 @@
+@charset "utf-8";
+.flexBlock{
+	display: flex;
+	display: -webkit-box; 
+   display: -moz-box;  
+   display: -ms-flexbox; 
+   display: -webkit-flex; 
+}
+.flex1{
+   flex: 1;
+}
+html,
+body {
+   
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+}
+
+p,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3f3f3f;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    background: url('../img/bg.png') no-repeat;
+    flex-direction:column;
+}
+.header {
+    height:140px;
+    .headerMain{
+        width:1366px;
+        margin: 0 auto;
+        height:100%;
+    }
+    img {
+        width: 727px;
+        margin-top: 68px;
+    }
+}
+.main {
+    width: 1366px;
+    margin: 0 auto;
+    flex: 1;
+    .centerCon{
+        width: 100%;
+        height:460px;
+        position: relative;
+        top:50%;
+        transform: translateY(-50%);
+    }
+}
+.footer{
+    height: 50px;
+    text-align: center;
+    color:#fff;
+}
+
+.border{
+    border:1px solid red;
+}
+.login_content {
+    width: 434px;
+   
+    padding:23px 12px 15px 12px;
+    
+    .login_area {
+        width: 420px;
+      
+        background: #ffffff;
+        z-index: 999;
+        border-radius: 3px;
+        
+        input {
+            margin-left: 40px;
+        }
+    }
+    .login_header {
+        width: 100%;
+        height: 10%;
+        margin: 0 auto;
+        background: url(../img/logo.png) center left no-repeat;
+    }
+    .login_name{
+        font-size: 20px;
+        text-indent: 30px;
+        height: 27px;
+        line-height: 25px;
+        background: url(../img/2.png) repeat-x;
+    .login_title{
+        padding: 0 10px;
+        background: #ffffff;
+        color:#3B3C3C;
+    }
+}
+
+.userDiv{
+    height:127px;
+}
+.passwordDiv{
+    min-height:72px;
+}
+
+
+.user,
+.password {
+    width: 320px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+    font-size: 18px;
+    text-indent: 55px;
+}
+
+input::-webkit-input-placeholder {
+    /* placeholder颜色  */
+    color: #d6d6d6;
+
+}
+
+.user {
+    margin-top: 43px;
+    background: url(../img/user.png) center left no-repeat;
+}
+
+.password {
+    background: url(../img/password.png) center left no-repeat;
+}
+
+.remember {
+    margin-top: 23px;
+    width: 120px;
+    height: 48px;
+    line-height: 50px;
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+    font-size: 18px;
+    text-indent: 10px;
+}
+
+.yzm {
+    line-height: 50px;
+    position: relative;
+}
+
+.yzm img {
+    width: 27%;
+    position: absolute;
+    left: 183px;
+    top: 15px;
+}
+
+.longinbtn {
+    width: 400px;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background: #288dec;
+    color: #fff;
+    font-size: 23px;
+    margin-top: 40px;
+}
+
+.login-btn {
+    width: 76%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 6px;
+}
+
+.login-btn button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background: #ffb400;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+.login-btn button:first-child {
+    background: #00B5FF;
+}
+
+.content {
+    background: rgba(0, 0, 0, .1);
+    zoom: 1;
+}
+
+.content:after {
+    content: '.';
+    width: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+
+/*登录添加*/
+.login_area input {
+    font-family: "microsoft yahei";
+}
+
+.login_area input:focus {
+    outline: medium;
+}
+
+.login_area input::-ms-clear {
+    display: none;
+}
+
+/*注册*/
+.register {
+    width: 905px;
+    height: auto;
+    overflow: hidden;
+    background: url(../img/register_bg.png) no-repeat;
+    z-index: 9999;
+    margin: 0 auto;
+    top: 10%;
+    position: absolute;
+    left: 18%;
+    display: none;
+}
+
+.register_con {
+    overflow: hidden;
+    margin: 20px;
+    background: #fff;
+    padding: 15px 20px;
+}
+
+.title {
+    font-size: 18px;
+    color: #1b74e2;
+    font-weight: bold;
+    border-bottom: solid 1px #2786d6;
+    padding-bottom: 10px;
+    text-indent: 10px;
+}
+
+.shu {
+    width: 4px;
+    height: 15px;
+    background: #295fcb;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.fr {
+    float: right;
+}
+
+.margin_right_10 {
+    margin-right: 10px;
+}
+
+.margin_bottom_100 {
+    margin-bottom: 100px;
+}
+
+.margin_bottom_120 {
+    margin-bottom: 120px;
+}
+
+.margin_bottom_30 {
+    margin-bottom: 30px;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.icon_list {
+    list-style: none;
+    font-size: 16px;
+}
+
+.icon_list li {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.icon_list li a {
+    color: #333;
+}
+
+.icon_list li a img {
+    border: none;
+}
+
+.close img {
+    cursor: pointer;
+}
