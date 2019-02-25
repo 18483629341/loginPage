@@ -48,10 +48,12 @@ body {
   background: url('../img/bg.png') no-repeat;
   background-size: 100% 100%;
   flex-direction: column;
+  border: 1px solid red;
 }
 .header {
   width: 100%;
   height: 140px;
+  border: 1px solid blue;
 }
 .header .headerMain {
   width: 72%;
@@ -63,6 +65,7 @@ body {
   margin-top: 68px;
 }
 .main {
+  border: 1px solid blue;
   width: 72%;
   margin: 0 auto;
   flex: 1;
@@ -75,6 +78,7 @@ body {
   transform: translateY(-50%);
 }
 .footer {
+  border: 1px solid blue;
   height: 50px;
   text-align: center;
   color: #fff;
