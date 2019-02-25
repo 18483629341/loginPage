@@ -6,10 +6,10 @@ let postObj = {
 }
 
 $(function () {
-	//autoFit();
+	autoFit();
 })
 window.onresize = function () {
-//	autoFit();
+	autoFit();
 }
 $('body').on('click', '.login', function () {
 	var flag = valid();
@@ -95,9 +95,9 @@ var W = null;
 
 function autoFit() {
 	swidth = $(window).width();
-	if (swidth > 1366 || swidth === 1366) {
+	//if (swidth > 1344 || swidth === 1344) {
 		resize();
-	}
+	//}
 }
 //resize();
 //整屏等比缩放
@@ -106,20 +106,27 @@ function autoFit() {
 function resize() {
 	var winratio = $(window).width() / 1920;
 	var height = $(window).height();
-
-	$('.header').css({
-		transform: "scale(" + winratio + ")",
-		transformOrigin: "center top"
-	});
-
-	$('.login_content').css({
-	  transform: "scale("+winratio+")",
-	  transformOrigin: "left middle"
-	});
-	$('.themeBox').css({
-		transform: "scale("+winratio+")",
-		transformOrigin: "center middle"
-	});
+    if(winratio<1){
+		$('.headerMain').css({
+			transform: "scale(" + winratio + ")",
+			transformOrigin: "left top"
+		});
+	
+		$('.login_content').css({
+		  transform: "scale("+winratio+")",
+		  transformOrigin: "right center"
+		});
+		$('.themeBox').css({
+			transform: "scale("+winratio+")",
+			transformOrigin: "left center"
+		});
+	}else{
+		$('.html1').css({
+			transform: "scale(" + winratio + ")",
+			transformOrigin: "left top"
+		})
+	}
+	
 	
 	
 }
