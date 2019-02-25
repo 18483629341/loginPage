@@ -82,9 +82,9 @@ body{
     width: 434px;
     height:438px;
     margin:auto 0;
-    background: #ffffff;
     .login_area {
-        height: 392px;
+        height:100%;
+        background: #ffffff;
         z-index: 999;
         border-radius: 3px;
         padding:23px 12px 15px 12px;
@@ -168,33 +168,19 @@ body{
     border:1px solid red;
 }
 
-.checkbox,.checkbox:hover,.checkbox:focus,.checkbox:checked{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
+input[type='radio']{
     appearance: none;
-    position: relative;
     width: 20px;
     height:21px;
-    top: 7px;
-}
-.checkbox{
     background: url(../img/rdo.png) no-repeat;
 }
-.checkbox:checked{
-    background: url(../img/rdo_on.png) no-repeat;
-}
+
 input::-webkit-input-placeholder {
     /* placeholder颜色  */
     color: #d6d6d6;
 }
-.remeberPass{
-    margin-left: 1px;
-    color:#7b7b7b;
-}
-.radioDiv{
-    min-height:54px;
-}
+
+
 
 .remember {
     margin-top: 23px;
@@ -232,7 +218,7 @@ input::-webkit-input-placeholder {
 }
 
 .login-btn {
-    width: 320px;
+    width: 76%;
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -241,20 +227,19 @@ input::-webkit-input-placeholder {
 }
 
 .login-btn button {
-    width: 100%;
+    width: 150px;
     height: 50px;
     border: none;
     cursor: pointer;
     background: #ffb400;
     color: #fff;
     font-size: 20px;
-    
+    margin-top: 15px;
     border-radius: 3px;
 }
 
 .login-btn button:first-child {
-    background: @activeBorder;
-    width:100%;
+    background: #00B5FF;
 }
 
 .content {
@@ -314,11 +299,7 @@ input::-webkit-input-placeholder {
     padding-bottom: 10px;
     text-indent: 10px;
 }
-.suggestDiv{
-    margin: 0 0 0 54px;
-    color:#7b7b7b;
-    
-} 
+
 .shu {
     width: 4px;
     height: 15px;
