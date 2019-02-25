@@ -14,7 +14,7 @@ window.onresize = function () {
 $('body').on('click', '.login', function () {
 	var flag = valid();
 	if (flag) { //如果flag为true，则发送信息
-		console.log('验证通过', postObj);
+		console.log('表单验证通过', postObj);
 		// $.post('url',{info:postObj},function(data){//！！！！！这里需要后台添加
 		//})
 	}
@@ -28,8 +28,8 @@ function valid() { //格式验证，以及获取输入框信息
 	let isSave = $('.checkBox').hasClass('active');
 	let userFlag = true; //表示用户名的前端验证是否通过
 	let passFlag = true; //表示密码的前端验证是否通过
-	console.log('是否为邮箱：' + isEmail(user), '是否为电话号码：' + isPhone(user));
-	/*   前端验证用户名   */
+	console.log('用户名是否为邮箱：' + isEmail(user), '用户名是否为电话号码：' + isPhone(user));
+	/*   前端  格式验证用户名   */
 	if (!user) {
 		$('.user').addClass('error');
 		$('.user').siblings('.helpBolck').addClass('error');
@@ -60,7 +60,7 @@ function valid() { //格式验证，以及获取输入框信息
 		postObj.password = password;
 	}
 	postObj.isSave = isSave;
-	console.log(userFlag, passFlag);
+	console.log('用户名格式验证是否通过：' +userFlag, '密码格式验证是否通过：' +passFlag);
 	return (userFlag && passFlag);
 }
 $('body').on('click', '.checkBox', function () {
