@@ -30,7 +30,6 @@ dd {
 html,
 body {
   width: 100%;
-  min-width: 1366px;
   height: 100%;
   box-sizing: content-box;
 }
@@ -55,7 +54,6 @@ body {
   height: 140px;
 }
 .header .headerMain {
-  min-width: 1366px;
   width: 72%;
   margin: 0 auto;
   height: 100%;
@@ -65,7 +63,6 @@ body {
   margin-top: 68px;
 }
 .main {
-  min-width: 1366px;
   width: 72%;
   margin: 0 auto;
   flex: 1;
@@ -83,11 +80,8 @@ body {
   color: #fff;
 }
 .themeBox {
-  max-width: 747px;
   width: 100%;
   height: 100%;
-  margin: 0 auto;
-  background: url('../img/left_pic1.png') no-repeat center top;
 }
 .login_content {
   width: 434px;
