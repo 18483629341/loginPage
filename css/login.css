@@ -111,6 +111,7 @@ body {
   text-indent: 46px;
 }
 .login_content .login_area .inputP input {
+  width: 250px;
   border: none;
   height: 25px;
   line-height: 25px;
@@ -195,6 +196,9 @@ body {
 input::-webkit-input-placeholder {
   /* placeholder颜色  */
   color: #d6d6d6;
+}
+input::-internal-autofill-selected {
+  background-color: #fff!important;
 }
 .remeberPass {
   margin-left: 1px;

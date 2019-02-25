@@ -98,6 +98,7 @@ body{
             font-size: 18px;
             text-indent: 46px;
             input{
+                width: 250px;
                 border: none;
                 height:25px;
                 line-height: 25px;
@@ -169,7 +170,6 @@ body{
         // input{
         //     border-left:1px solid @errorBorder;
         // }
-        
     }
     .helpBolck.error{
         display: block;
@@ -196,6 +196,10 @@ input::-webkit-input-placeholder {
     /* placeholder颜色  */
     color: #d6d6d6;
 }
+input::-internal-autofill-selected{
+    background-color: #fff!important;
+}
+
 .remeberPass{
     margin-left: 1px;
     color:#7b7b7b;
