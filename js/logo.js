@@ -2,7 +2,7 @@
 let postObj = {
 	user: "",
 	password: "",
-	isSave: true
+	isSave: null
 }
 
 $(function () {
@@ -11,7 +11,7 @@ $(function () {
 window.onresize = function () {
 	autoFit();
 }
-$('body').on('click', '.login', function () {
+$('body').on('click', '#login', function () {
 	var flag = valid();
 	if (flag) { //如果flag为true，则发送信息
 		console.log('表单验证通过', postObj);
@@ -28,17 +28,11 @@ function valid() { //格式验证，以及获取输入框信息
 	let isSave = $('.checkBox').hasClass('active');
 	let userFlag = true; //表示用户名的前端验证是否通过
 	let passFlag = true; //表示密码的前端验证是否通过
-	console.log('用户名是否为邮箱：' + isEmail(user), '用户名是否为电话号码：' + isPhone(user));
 	/*   前端  格式验证用户名   */
 	if (!user) {
 		$('.user').addClass('error');
 		$('.user').siblings('.helpBolck').addClass('error');
-		$('.user').siblings('.helpBolck').html('输入的手机号码/邮箱不能为空哦！');
-		userFlag = false;
-	} else if (!isEmail(user) && !isPhone(user)) { //当两个验证都没有通过时，报错；
-		$('.user').addClass('error');
-		$('.user').siblings('.helpBolck').addClass('error');
-		$('.user').siblings('.helpBolck').html('请输入正确的手机号码/邮箱！');
+		$('.user').siblings('.helpBolck').html('输入的用户名不能为空哦！');
 		userFlag = false;
 	} else {
 		$('.user').removeClass('error');
@@ -60,7 +54,6 @@ function valid() { //格式验证，以及获取输入框信息
 		postObj.password = password;
 	}
 	postObj.isSave = isSave;
-	console.log('用户名格式验证是否通过：' +userFlag, '密码格式验证是否通过：' +passFlag);
 	return (userFlag && passFlag);
 }
 $('body').on('click', '.checkBox', function () {
@@ -95,12 +88,12 @@ var W = null;
 
 function autoFit() {
 	swidth = $(window).width();
-	//if (swidth > 1344 || swidth === 1344) {
+	if (swidth > 1320 || swidth === 1320) {
 		resize();
-	//}
+	}
 }
-//resize();
-//整屏等比缩放
+
+//部分模块等比缩放
 
 
 function resize() {

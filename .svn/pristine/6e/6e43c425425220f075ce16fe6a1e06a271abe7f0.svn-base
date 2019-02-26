@@ -172,7 +172,6 @@ body {
   line-height: 32px;
   color: #ff431f;
   display: none;
-  margin-left: 98px!important;
 }
 .login_content .inputP.error {
   border: 1px solid red;

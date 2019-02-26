@@ -30,13 +30,13 @@
 					</div>
 					<div class="userDiv">
 						<p class="inputP user ">
-							<input type="text" id="userName" name="userName" placeholder="请输入您的用户名" />
+							<input type="text" id="userName" name="userName" placeholder="请输入手机号/邮箱" />
 						</p>
 						<p class="helpBolck "></p>
 					</div>
 					<div class="passwordDiv">
 						<p class="inputP password">
-							<input type="text" id="password" name="password" placeholder="请输入您的密码" />
+							<input type="text" id="password" name="password" placeholder="请输入密码" />
 						</p>
 						<p class="helpBolck"></p>
 					</div>
