@@ -99,7 +99,7 @@ function autoFit() {
 function resize() {
 	var winratio = $(window).width() / 1920;
 	var height = $(window).height();
-    if(winratio<1){
+    if(winratio<1){//只有宽度小于1920的，才需要js做自适应
 		$('.headerMain').css({
 			transform: "scale(" + winratio + ")",
 			transformOrigin: "left top"
@@ -113,12 +113,13 @@ function resize() {
 			transform: "scale("+winratio+")",
 			transformOrigin: "left center"
 		});
-	}else{
-		$('.html1').css({
-			transform: "scale(" + winratio + ")",
-			transformOrigin: "left top"
-		})
 	}
+	// else{
+	// 	$('.html1').css({
+	// 		transform: "scale(" + winratio + ")",
+	// 		transformOrigin: "left top"
+	// 	})
+	// }
 	
 	
 	
