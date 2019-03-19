@@ -6,7 +6,7 @@ let postObj = {
 }
 
 $(function () {
-	autoFit();
+	autoFit(); 
 })
 window.onresize = function () {
 	autoFit();
